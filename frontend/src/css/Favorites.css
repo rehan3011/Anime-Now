@@ -1,0 +1,91 @@
+.favorites {
+  padding: 3rem 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.favorites h2 {
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.04em;
+  transition: color 0.3s ease;
+}
+
+.favorites-empty {
+  text-align: center;
+  padding: 5rem 2rem;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--card-shadow);
+  border-radius: 16px;
+  margin: 4rem auto;
+  max-width: 600px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  animation: fadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.favorites-empty h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  letter-spacing: -0.03em;
+  transition: color 0.3s ease;
+}
+
+.favorites-empty p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  max-width: 400px;
+  margin: 0 auto;
+  transition: color 0.3s ease;
+}
+
+/* Entrance Animation for Grid Cards and Page Sections */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.anime-grid > * {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (max-width: 768px) {
+  .favorites {
+    padding: 2rem 1.25rem;
+  }
+  
+  .favorites h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
+  
+  .favorites-empty {
+    padding: 4rem 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .favorites-empty h2 {
+    font-size: 1.5rem;
+  }
+  
+  .favorites-empty p {
+    font-size: 0.95rem;
+  }
+}
