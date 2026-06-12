@@ -20,6 +20,9 @@
   <i>Ambient Light/Dark Mode Switcher & Responsive Poster Cards Grid</i>
 </p>
 
+https://github.com/rehan3011/Anime-Now/blob/main/Preview%20Video.mp4
+
+
 ---
 
 ## 🌌 Overview
