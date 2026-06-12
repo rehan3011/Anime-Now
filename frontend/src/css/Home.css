@@ -1,0 +1,110 @@
+.home {
+  padding: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.search-form {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  display: flex;
+  gap: 0.75rem;
+  box-sizing: border-box;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.85rem 1.25rem;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background-color: var(--input-bg);
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(255, 71, 87, 0.15);
+}
+
+.search-input::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+.search-button {
+  padding: 0.85rem 2rem;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  white-space: nowrap;
+}
+
+.search-button:hover {
+  background-color: var(--accent-hover);
+}
+
+.search-button:active {
+  transform: scale(0.97);
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 1rem;
+  }
+
+  .search-form {
+    margin-bottom: 2rem;
+  }
+  
+  .search-input {
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .search-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+.anime-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  margin-top: 4rem;
+  font-weight: 500;
+}
+
+.error-message {
+  text-align: center;
+  color: #ff4757;
+  font-size: 1.2rem;
+  margin-top: 4rem;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 71, 87, 0.1);
+  border-radius: 8px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
