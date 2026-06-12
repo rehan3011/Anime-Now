@@ -114,8 +114,6 @@ Run these scripts inside the `frontend` directory:
 | :--- | :--- |
 | `npm install` | Installs package dependencies. |
 | `npm run dev` | Starts the Vite development server locally on `http://localhost:5173`. |
-| `npm run build` | Compiles optimized static assets into the `dist/` folder. |
-| `npm run preview` | Runs a local web server to preview your production build. |
 
 ---
 
@@ -139,30 +137,3 @@ The application consumes the open-source **Jikan API (v4)**:
 
 ---
 
-## 💡 Pro Tips for Developers
-
-- **Jikan API Limits:** Keep in mind Jikan's free-tier rate limits (3 requests per second). Avoid trigger-happy reloads or search keystrokes without debouncing.
-- **Color Variables:** You can modify the overall look of the site simply by changing the HEX color values inside [index.css](file:///c:/Users/rehan/Desktop/react%20practice/frontend/src/index.css); all components automatically inherit variables.
-- **Clearing Bookmarks:** Wiping out your browser local storage keys will completely reset the favorites collection to an empty list.
-
----
-
-## 🔧 Troubleshooting
-
-| Issue | Solution |
-| :--- | :--- |
-| **Failed to fetch top anime** | The Jikan public API might be experiencing temporary downtime or rate-limiting. Check the console logs. |
-| **Theme toggle doesn't stick** | Verify that your browser is allowing local storage files to write values. |
-| **Overlap issues on layout** | Verify that `NavBar.css` is imported in `NavBar.jsx`. |
-
----
-
-## 📜 License
-This project is licensed under the **MIT License**.
-
----
-
-<p align="center">
-  Developed with ❤️ for the Anime Community.<br>
-  <i>For educational purposes only. Built by the AniTrack Team.</i>
-</p>
